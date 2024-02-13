@@ -43,7 +43,7 @@ let saveFile = () => {
     var year = year.getUTCFullYear();
 
     newdate = year + "/" + month + "/" + day;
-    const sFileName = "Enbaya form data " + filename; // The file to save the data to.
+    const sFileName = "Enbaya form data " + filename; //The file to save the data to.
 
     let newLink = document.createElement("a");
     newLink.download = new Date();
@@ -55,8 +55,8 @@ let saveFile = () => {
         newLink.style.display = "none";
         document.body.appendChild(newLink);
     }
-
     newLink.click(); //autodownload the CSV file and save it on the machine.
+    location.href = "success.html";
 };
 
 
