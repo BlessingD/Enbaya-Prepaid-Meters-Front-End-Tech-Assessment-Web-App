@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Enbaya Prepaid Meters form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">  
+    <link rel="stylesheet" href="resources/css/style.css"></link>
   </head>
   <body>
-    <div class="main-block">
-      <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="mb-3">
-                    <h3>Enbaya Client Registration Form</h3>
-                </div>
-                <form accept="" class="shadow p-4">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Full Name">
-                  </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
-                    </div>
-                    <div class="mb-3">
-                      <input type="text" class="form-control" name="cellphone" id="cellphone" placeholder="Cellphone Number">
-                    </div>
-                    <div class="mb-3">
-                      <select class="form-control" name="country" id="country">
-                        <option value="" disabled selected>Select Country</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" class="form-control btn btn-success">Submit</button>
-                    </div>
-                  </div>                
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
+	<div class="container">
+		<div class="header">
+			<h2>Enbaya Registration Form</h2>
+		</div>
+		<form id="reg-form" name="registration-form" class="form">
+			<div class="form-control">
+				<input type="text" placeholder="Full Name" id="fullname" name="fullname" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			</div>
+			<div class="form-control">
+				<input type="email" placeholder="Email Address" id="email" name="email" />
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			</div>
+			<div class="form-control">
+				<select name="country" id="country">
+				   <option value="" disabled selected>Select Country<span class="chevron"></span></option>
+				   <span class="chevron"></span>
+				</select>
+					  <i class="fas fa-check-circle"></i>
+					  <i class="fas fa-exclamation-circle"></i>
+				  </div>
+			<div class="form-control">
+				<input type="text" placeholder="Cellphone Number" id="cellphone" name="cellphone"/>
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			</div>
+			
+			
+			<button>Submit</button>
+		</form>
+	</div>
+	<!-- ✅ FIRST - load jquery ✅ -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- ✅ SECOND - load jquery validate ✅ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+      integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+
+    <!-- ✅ THIRD - load additional methods ✅ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+      integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+	<script src="resources/js/index.js"></script>
+	<script src="resources/js/validation.js"></script>
   </body>
-  <script src="resources/js/index.js"></script>
 </html>
