@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
     
     $(function() {
-    // Setup form validation on the #register-form element
+    // Setup form validation on the #re-form element
    $("form[name='registration-form']").validate({  
 
        // Specify the validation rules
@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
        // Specify the validation error messages
   messages: {
            fullname: "Please Enter Full Name",
-           email: "Please Enter Valid Email Address",
+           email: "Please Enter a Valid Email Address",
            country: "Please Select Your Country",
            cellphone:"Please Enter a Valid Cellphone Number"
        },

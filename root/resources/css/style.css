@@ -1,9 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
-
-* {
-    box-sizing: border-box;
-} */
+/**
+ * HTML FORM & SUCCESS SCREEN STYLING
+ * An HTML form with validation and data submission to a CSV file.
+ *
+ * @author: Blessing Dongo
+ * @version: 1.0.0
+ */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +22,7 @@ body {
     overflow: hidden;
     width: 500px;
     max-width: 100%;
+    top:50%;
     margin: 0 auto;
 }
 
@@ -32,7 +34,8 @@ body {
 
 .header h2 {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:28px;
 }
 
 .form {
@@ -52,7 +55,7 @@ body {
 }
 
 .form-control input, .form-control select {
-    border: 2px solid #f0f0f0 !important;
+    border: 2px solid #f0f0f0;
     border-radius: 10px;
     display: block;
     font-family: 'Arial';
@@ -66,26 +69,9 @@ body {
     color:#202020;
 }
 
-.form-control input:focus {
-    outline: 0;
-    border-color: #777;
-}
-
-.form-control i {
-    visibility: hidden;
-    position: absolute;
-    top: 40px;
-    right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
+.form-control input:focus, .form-control select:focus {
+    outline:2px solid #d1dd2b;
+    border-color: #ffffff;
 }
 
 .error { 
@@ -123,7 +109,14 @@ body {
 .success svg{
     fill:#d1dd2b;
     width: 50px;
-  height: 50px;
+    height: 50px;
 
 }
 
+#homelink{
+    margin-top: 20px;;
+}
+
+#homelink:hover{
+    text-decoration: underline;
+}
