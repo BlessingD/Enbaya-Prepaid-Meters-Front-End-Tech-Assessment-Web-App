@@ -17,12 +17,13 @@ jQuery(document).ready(function(){
         },
         cellphone: {    
             required: true, //cellphone number is mandatory
-            maxlength:10    //cellphone number must be 10 digits long
+            maxlength:10,
+            minlength:10    //cellphone number must be 10 digits long
         },  
        },
        // Specify the validation error messages
   messages: {
-           fullname: "Please Enter Full Name",
+           fullname: "Please Enter Your Full Name",
            email: "Please Enter a Valid Email Address",
            country: "Please Select Your Country",
            cellphone:"Please Enter a Valid Cellphone Number"

@@ -1,4 +1,5 @@
 /**IMPLEMENT REST COUNTRIES API CALL AND DISPLAY COUNTRY NAMES IN THE SELECT DROPDOWN FIELD.**/
+
 const countriesList = document.getElementById("country");
 const getPost = async () => {
     const response = await fetch("https://restcountries.com/v3.1/independent?status=true");
@@ -18,6 +19,7 @@ const displayOption = async () => {
 displayOption();
 
 /** SPLIT FULL NAME INTO FIRST NAME & LAST NAME AND POST ALL FORM DATA TO A LOCAL CSV FILE**/
+
 function clearForm() { //declare a function that clears up the form
     document.getElementById("reg-form").reset();
 }
