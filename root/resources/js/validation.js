@@ -17,8 +17,9 @@ jQuery(document).ready(function(){
         },
         cellphone: {    
             required: true, //cellphone number is mandatory
-            maxlength:10,
-            minlength:10    //cellphone number must be 10 digits long
+            digits:true,    //numbers only, no other characters allowed.
+            minlength:10,
+            maxlength:10   //cellphone number must be 10 digits long
         },  
        },
        // Specify the validation error messages

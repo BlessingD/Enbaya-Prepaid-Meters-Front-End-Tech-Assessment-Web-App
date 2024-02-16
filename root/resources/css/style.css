@@ -92,9 +92,11 @@ color:#636363;
     font-family: "Arial";
     font-size:13px;
    }
+
    .form-validate input{
      margin-top: 10px;
    }
+   
    button{
      display: block;
      margin-top: 10px;

@@ -18,7 +18,7 @@ const displayOption = async () => {
 };
 displayOption();
 
-/** SPLIT FULL NAME INTO FIRST NAME & LAST NAME AND POST ALL FORM DATA TO A LOCAL CSV FILE**/
+/** SPLIT FULL NAME INTO FIRST NAME & LAST NAME AND POST ALL FORM DATA TO A CSV FILE**/
 
 function clearForm() { //declare a function that clears up the form
     document.getElementById("reg-form").reset();
